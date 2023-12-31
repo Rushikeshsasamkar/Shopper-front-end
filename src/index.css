@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  zoom: 0.8;
+
 }
 
 body {
@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'poppins';
+
 }
 
 code {
