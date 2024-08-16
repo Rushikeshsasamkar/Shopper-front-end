@@ -1,3 +1,4 @@
+/* Base Styles */
 .new-collections {
     display: flex;
     flex-direction: column;
@@ -19,9 +20,49 @@
     background: #252525;
 }
 
-.collections{
+.collections {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .new-collections h1 {
+        font-size: 40px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-collections h1 {
+        font-size: 36px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 28px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        height: 4px;
+    }
 }
